@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import Cell from './Components/Cell';
+import Cell from './components/cell';
 
 const App = () => {
-	const [Cells, setCells] = useState(['', '', '', '', '', '', '', '', '']);
+	const [cells, setCells] = useState(['', '', '', '', '', '', '', '', '']);
 	return (
 		<div className='app'>
 			<div className='gameboard'>
-				{Cells.map((cell, index) => (
+				{cells.map((cell, index) => (
 					<Cell key={index} id={index} cell={cell} />
 				))}
 			</div>
